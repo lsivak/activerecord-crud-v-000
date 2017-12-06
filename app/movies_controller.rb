@@ -24,8 +24,13 @@ end
 
 def can_be_created_in_a_block
   Movie.create do |m|
-    __
+      m.string :title
+      m.datetime :release_date
+      m.string :director
+      m.string :lead
+      m.boolean :in_theaters
   end
+end
 end
 
 def can_get_the_first_item_in_the_database
