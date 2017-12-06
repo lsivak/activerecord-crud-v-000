@@ -24,11 +24,11 @@ end
 
 def can_be_created_in_a_block
   Movie.create do |m|
-      m.string :title
-      m.datetime :release_date
-      m.string :director
-      m.string :lead
-      m.boolean :in_theaters
+      m.title
+      m.release_date
+      m.director
+      m.lead
+      m.in_theaters
   end
 end
 
